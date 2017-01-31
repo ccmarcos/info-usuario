@@ -1,0 +1,122 @@
+
+
+#nombre{
+	text-align: center;
+	font-size: 2.5em;
+	color:#55555c;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+#costado {
+  background-color: #f5f5f5;
+  float: right;
+  margin-top: 60px;
+  width: 250px;
+  height: 430px;
+  /*border: 2px solid blue;*/
+}
+#menuconfig{
+  padding-left: 10px;
+  line-height: 2.5;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+#principales{
+  margin-left: 30px;
+  font-family: 'Lato', sans-serif;
+  color: #2d3e52;
+}
+aside > div > ul{
+  list-style: none;
+}
+aside div ul li a{
+  text-decoration: none;
+  color: #4e3f3f;
+}
+aside div ul li a:hover{
+  color: #29a8e6;
+}
+.salir{
+  text-decoration: none;
+  float: right;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #2d3e52;
+}
+
+
+
+/*estilos del popup*/
+
+.posicion-popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#envoltura{
+  width: 500px;
+  margin: 70px auto;
+  text-align: left;
+}
+
+#contenedor-popup{
+  background-color: #FFF;
+  padding: 60px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+  height: 37px;
+  width: 200px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border: 1px solid #BDC2C9;
+}
+
+.contenedor-inputs{
+	position: relative;
+	left: 80px;
+}
+
+input:focus {
+/*border:2px solid #6392c5;*/
+/*background-color:#F0F8FF;*/
+/*margin-right:10px;*/
+outline:0px;
+-webkit-box-shadow: 0 0 1px 1px #6392c5;
+-moz-box-shadow: 0 0 1px 1px #6392c5;
+box-shadow: 0 0 1px 1px #6392c5;
+}
+
+.texto-crear-usuario{
+	font-size: 23px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-crear{
+	float: right;
+	color: #15a093;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 15px;
+	font-size: 19px;
+}
+
+.boton-x{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	padding-bottom: 5px;
+	font-size: 21px;
+}

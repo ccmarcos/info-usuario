@@ -1,0 +1,77 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+       <script type="text/javascript">
+
+   function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      if(e.style.display == 'block')
+         e.style.display = 'none';
+      else
+         e.style.display = 'block';
+   }
+   </script>
+</head>
+<body>
+  <a href="#" title="Salir" class="salir"><span class="icon-log-out"></span></a>
+  <p id="nombre">Aquino Choto</p>
+
+  <aside id="costado">
+    <div id="menuconfig">
+    <p id="principales">CONFIGURACIÓN</p>
+    <ul>
+      <li><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');">Cambiar contraseña</a></li>
+      <li><a href="javascript:void(0)" onclick="toggle_visibility('popup-box2');">Agregar servicio</a></li>
+    </ul>
+    </div>
+  </aside>
+
+  <div id="popup-box1" class="posicion-popup">
+        <div id="envoltura">
+          <p class="boton-x"><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" class="boton-x">X</a></p>
+
+  				<div id="contenedor-popup">
+  					<div class="contenedor-inputs">
+  					<strong><p class="texto-crear-usuario">Cambiar Contraseña</p></strong><br>
+  					<div class="form-input">
+  						<input type="password" name="contrasena" placeholder="Nueva Contraseña">
+  					</div><!--find del form1-->
+  				</div><!--fin del contenedor de los inputs-->
+  					<p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" onclick="this.form.submit()" class="btn-crear">Guardar</a></p>
+  					<p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" class="btn-crear">Cancelar</a></p>
+
+          </div><!--popup container end-->
+        </div><!--popup wrapper popup end-->
+      </div><!--popup box 1 end-->
+
+      <div id="popup-box2" class="posicion-popup">
+            <div id="envoltura">
+              <p class="boton-x"><a href="javascript:void(0)" onclick="toggle_visibility('popup-box2');" class="boton-x">X</a></p>
+
+              <div id="contenedor-popup">
+                <div class="contenedor-inputs">
+                <strong><p class="texto-crear-usuario">Agregar Servicio</p></strong><br>
+                <div class="form-input">
+                  <input type="text" name="usuario" placeholder="Usuario">
+                </div><!--find del form1-->
+                <div class="form-input">
+                  <input type="password" name="contrasena" placeholder="Contraseña">
+                </div><!--find del form2-->
+                <div class="form-input">
+                  <input type="text" name="servicio" placeholder="Servicio">
+                </div><!--find del form3-->
+              </div><!--fin del contenedor de los inputs-->
+                <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box2');" onclick="this.form.submit()" class="btn-crear">Guardar</a></p>
+                <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box2');" class="btn-crear">Cancelar</a></p>
+
+              </div><!--popup container end-->
+            </div><!--popup wrapper popup end-->
+          </div><!--popup box 2 end-->
+</body>
+</html>
